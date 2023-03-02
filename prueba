@@ -1,15 +1,16 @@
 #include <iostream>
 using namespace std;
 
+void Suma(float n1,float n2);
+
+int main(){
+return 0;
+}
 //Suma
 void Suma(float n1,float n2){
     float sum;
     sum=n1+n2;
     cout<<"Resultado de la suma: "<<sum<<endl;
-}
-
-int main(){
-return 0;
 }
 //Multiplicacion
 void Multi(float n1,float n2){
