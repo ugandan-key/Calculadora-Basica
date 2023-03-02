@@ -4,6 +4,55 @@ using namespace std;
 void Suma(float n1,float n2);
 
 int main(){
+    int opc;
+    float num1,num2;  //Creo que con esas 2 variables deberia ser suficiente para las funciones,pero si necesitan crear las ponen 
+
+do{
+//Menu de la calculadora 
+cout<<"Calculadora basica"<<endl;
+cout<<"Seleccione una opcion del menu"<<endl;
+cout<<"1)Suma"<<endl;
+cout<<"2)Resta"<<endl;
+cout<<"3)Multiplicacion"<<endl;
+cout<<"4)Division"<<endl;
+cout<<"5)Salir"<<endl;
+cin>>opc;
+switch(opc){
+    case 1:
+        cout<<"Ingrese dos numeros: "<<endl;
+        cin>>num1;
+        cout<<"+";
+        cin>>num2;
+        Suma(num1,num2);
+    break;
+
+    case 2:
+        cout<<"Ingrese dos numeros: "<<endl;
+        cin>>num1;
+        cout<<"-";
+        cin>>num2;
+        Resta(num1,num2);
+    break;
+    
+    case 3:
+        cout<<"Ingrese dos numero: "<<endl;
+        cin>>num1;
+        cout<<" * ";
+        cin>>num2;
+        Multi(num1,num2);
+    break;
+    
+    case 4:
+        cout<<"Ingrese dos numeros: "<<endl;
+        cin>>num1;
+        cout<<" / ";
+        cin>>num2;
+        Division(num1,num2);
+
+    break;
+}
+
+}while(opc!=5);
 return 0;
 }
 //Suma
