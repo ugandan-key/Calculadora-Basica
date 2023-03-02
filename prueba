@@ -1,1 +1,6 @@
-#include <iostream>
+//Division
+void Division(float n1, float n2){
+    float div;
+    div=n1/n2;
+    cout<<"Resultado de la division: "<<div<<endl;
+}
